@@ -15,7 +15,7 @@ $response->localita->nomeLungo;
 
 ###AUTOCOMPLETAMENTO STAZIONE
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/autocompletaStazione/{STRINGA_DI_RICERCA}`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/autocompletaStazione/{STRINGA_DI_RICERCA}`
 
 RISPOSTA: TESTO
 
@@ -29,7 +29,7 @@ NOME_STAZIONE|ID_STAZIONE
 
 ###AUTOCOMPLETAMENTO STAZIONE
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/cercaNumeroTrenoTrenoAutocomplete/{NUMERO_TRENO}`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/cercaNumeroTrenoTrenoAutocomplete/{NUMERO_TRENO}`
 
 RISPOSTA: TESTO
 
@@ -42,7 +42,7 @@ NUMERO_TRENO - NOME_STAZIONE_PARTENZA | NUMERO_TRENO - CODICE_STAZIONE
 
 ###ELENCO STAZIONI REGIONE
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/elencoStazioni/{ID_REGIONE}`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/elencoStazioni/{ID_REGIONE}`
 
 RISPOSTA:	ARRAY
 
@@ -117,7 +117,7 @@ Array
 
 ###OTTENERE LE STAZIONI ALTERNATIVE DELLA CITT
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/elencoStazioniCitta/{ID_STAZIONE}`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/elencoStazioniCitta/{ID_STAZIONE}`
 
 RISPOSTA:	JSON/ARRAY
 
@@ -139,7 +139,7 @@ Array
 
 ###CODICE NUMERICO REGIONE
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/regione/{ID_STAZIONE}`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/regione/{ID_STAZIONE}`
 
 RISPOSTA:	TESTO(NUMERO)
 
@@ -148,7 +148,7 @@ CONTENUTO:	ID_REGIONE -> Numero
 
 ###INFORMAZIONI STAZIONE
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/dettaglioStazione/{ID_STAZIONE}/{ID_REGIONE}`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/dettaglioStazione/{ID_STAZIONE}/{ID_REGIONE}`
 
 RISPOSTA: JSON
 
@@ -220,8 +220,8 @@ stdClass Object
 
 ###ELENCO PARTENZE E ARRIVI DELLA STAZIONE
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/partenze/{ID_STAZIONE}/{DATA} [FORMATO: Wed Jan 07 2015 18:58:25 GMT+0100 (ora solare Europa occidentale)]`
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/arrivi/{ID_STAZIONE}/{DATA} [FORMATO: Wed Jan 07 2015 18:58:25 GMT+0100 (ora solare Europa occidentale)]`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/partenze/{ID_STAZIONE}/{DATA} [FORMATO: Wed Jan 07 2015 18:58:25 GMT+0100 (ora solare Europa occidentale)]`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/arrivi/{ID_STAZIONE}/{DATA} [FORMATO: Wed Jan 07 2015 18:58:25 GMT+0100 (ora solare Europa occidentale)]`
 
 RISPOSTA:	JSON
 
@@ -355,7 +355,7 @@ Numero indici uguale al numero di destinazioni
 
 ###INFORMAZIONE TRENO
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/andamentoTreno/{ID_STAZIONE}/{NUMERO_TRENO}`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/{ID_STAZIONE}/{NUMERO_TRENO}`
 
 RISPOSTA:	JSON
 
@@ -540,7 +540,7 @@ CONTENUTO:
 
 ###INFORMAZIONI TRENO
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/tratteCanvas/{ID_STAZIONE}/{NUMERO_TRENO}`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/tratteCanvas/{ID_STAZIONE}/{NUMERO_TRENO}`
 
 RISPOSTA: JSON
 
@@ -609,7 +609,7 @@ Numero indici uguale al numero di stazioni
 
 ###OTTENERE VIAGGI
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/soluzioniViaggioNew/{NUMERO_STAZIONE_PARTENZA}/{NUMERO_STAZIONE_ARRIVO}/{DATA} (formato: 2015-01-08T00:00:00)`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/soluzioniViaggioNew/{NUMERO_STAZIONE_PARTENZA}/{NUMERO_STAZIONE_ARRIVO}/{DATA} (formato: 2015-01-08T00:00:00)`
 
 RISPOSTA: JSON
 
@@ -647,7 +647,7 @@ stdClass Object
 
 ###INFORMAZIONI METEO
 
-URL: `http://www.viaggiatreno.it/viaggiatrenonew/resteasy/viaggiatreno/datimeteo/0`
+URL: `http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/datimeteo/0`
 
 RISPOSTA: JSON
 
